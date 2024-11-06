@@ -166,3 +166,26 @@ a.secondary {
     filter: invert();
   }
 }
+
+/* styles/Transition.module.css */
+
+/* Estilo común para ambos componentes */
+.fade {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Clase que aplica la transición de desvanecimiento (para el primer componente) */
+.fadeOut {
+  opacity: 0;
+}
+
+/* Clase para hacer que el componente B entre de manera gradual */
+.fadeIn {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fadeInActive {
+  opacity: 1;
+}
